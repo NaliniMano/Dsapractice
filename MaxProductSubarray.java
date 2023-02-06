@@ -9,6 +9,20 @@ public class MaxProductSubarray {
 		
 	}
 
+     /**
+     find the prod each element from the  given array
+      compare and find the max prod
+     if prod < 0 reset prod=1
+     
+     find the prod of each element in reverese direction
+     compare and find the max prod
+     return max product
+
+
+      time complexity o[n]  
+     **/
+       
+
 	private void findMaxProduct(int[] nums) {
 		// TODO Auto-generated method stub
 	      int prod=1,max=Integer.MIN_VALUE;
