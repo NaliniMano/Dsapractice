@@ -2,7 +2,7 @@ package daily_dsa_prob;
 
 public class Gasstation {
 	
-	public void example1()
+public void example1()
 	{
 		int[] gas = {1,2,3,4,5};
 	   int[] cost = {3,4,5,1,2};
@@ -21,7 +21,9 @@ public class Gasstation {
     temp sum + = gas[i]-cost[i] ;
     if(tempsum < 0)
       tempsum = 0;
-      tempindex=
+      tempindex=current_index+1
+
+ time complexity-> o[n]
     **/
 	private int  completeRotation(int[] gas, int[] cost) {
 		// TODO Auto-generated method stub
@@ -44,9 +46,10 @@ public class Gasstation {
              tempindex=i+1;
 		 }
 		}
-		return costcount;
+		return tempindex;
 		
 	}
+
 
 
 }
